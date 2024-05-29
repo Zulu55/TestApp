@@ -22,17 +22,5 @@ namespace WebApp.Services.Forecast
 
             return JsonConvert.DeserializeObject<IEnumerable<WeatherForecast>>(await response.Content.ReadAsStringAsync());
         }
-
-        //public ForecastService(HttpClient httpClient)
-        //{
-        //    _httpClient = httpClient;
-        //}
-
-        //public async Task<IEnumerable<WeatherForecast>?> GetForecastsAsync()
-        //{
-        //    var response = await _httpClient.GetAsync("WeatherForecast");
-
-        //    return JsonConvert.DeserializeObject<IEnumerable<WeatherForecast>>(await response.Content.ReadAsStringAsync());
-        //}
     }
 }
