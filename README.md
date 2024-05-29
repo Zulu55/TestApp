@@ -1,7 +1,19 @@
 # Solution By Zulu
 
+1. Set up the solution to run the API and WebApp simultaneously.
+2. Put a break point in ForecastService.cs to identify the problem.
+3. I identified that the problem was that the URL parameter is null because it is not in the settings.
+4. Add the Url parameter in the correct section in appsettings.json:
 
+"ApiSettings": {
+  "Url": "http://localhost:5104/"
+}
 
+5. Run the App and test
+
+It works!
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # TestApp
 
